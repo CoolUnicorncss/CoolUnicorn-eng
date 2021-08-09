@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CoolUnicorn.css</title>
+    <link href="https://coolunicorn.ml/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://coolunicorn.ml/icon.png" rel="icon">
+  </head>
+  <style>
+    .a {
+		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		text-decoration: none;
+		color: inherit;
+	}
+
+		.a:hover {
+			border-bottom-color: transparent;
+		}
+
+    .back-home {
+      color: #3c9de7; 
+      text-decoration: none;
+    }
+
+    .back-home:hover {
+      color: #3c9de7; 
+      text-decoration: underline;
+    }
+    </style>
+  <body>
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="../">
+        <img src="https://coolunicorn.ml/icon.png" class="nav-img">
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href>CoolUnicorn.css</a>
+      </div>
+      <div class="nav-item">
+        <button class="nav-button"  onClick="location.replace('https://de.coolunicorn.ml/docs/')">Deutsch</button>
+        <button class="nav-button"  onClick="location.replace('/')">Go to Home</button>
+      </div>
+    </nav>
+    <div class="sidenav">
+      <div class="sidenav-item">
+        <a href="#introduction">Introduction</a>
+      </div>
+      <div class="section">
+        <div class="sidenav-item">
+          <a href="#quickstart">Quick Start</a>
+        </div>
+        <div class="sidenav-item">
+          <a href="#template">Starter Template</a>
+        </div>
+      </div><hr>
+      <div class="sidenav-item">
+        <a href="#components">Components</a>
+      </div>
+      <div class="section">
+        <div class="sidenav-item">
+          <a href="#navbar">Navbar</a>
+        </div>
+        <div class="sidenav-item">
+          <a href="#sidenav">Sidenav</a>
+        </div>
+        <div class="sidenav-item">
+          <a href="#buttons">Buttons</a>
+        </div>
+        <div class="sidenav-item">
+          <a href="#cards">Cards</a>
+        </div>
+      </div><hr>
+      <div class="sidenav-item">
+        <a href="#">Testing</a>
+      <div class="section">
+        <div class="sidenav-item">
+          <a href="/code/" target="_blank">Code Editor</a>
+        </div>
+      </div><hr>
+  <div class="sidenav-item">
+    <a href="#">Contact</a>
+  </div>
+  <div class="section">
+    <div class="sidenav-item">
+    <a href="https://discord.gg/UA668EkqZ3" target="_blank">Discord</a>
+  </div>
+    </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title" id="introduction">Introduction</h1>
+      <div class="section">
+        <p class="subtitle">Get started with a world-class CSS library that was used to make coolunicorn and all kinds of other projects. Right here. In this docs page. </p>
+        <br><br>
+        <div id="quickstart">
+          <h2>Quick Start</h2>
+          Copy-paste the stylesheet 
+          <pre>&lt;link&gt;</pre>
+          into your 
+          <pre>&lt;head&gt;</pre>
+          before all other stylesheets to load our CSS.
+          <pre onClick="this.select()" class="pre-full">&lt;link href=&quot;https://coolunicorn.ml/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</pre><br>Or download this <a class="a" href="../style.css" download>file</a>!
+          <br><br><br>
+          <h3 id="template">Starter Template</h3>
+          <div class="section">
+            Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper <s>responsive</s> behaviors. Put it all together and your pages should look like this:
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+    &lt;title&gt;CoolUnicorn.css&lt;/title&gt;
+    &lt;link href=&quot;https://coolunicorn.ml/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav class=&quot;nav&quot;&gt;
+      &lt;div class=&quot;nav-item&quot;&gt;
+        &lt;img src=&quot;https://coolunicorn.ml/icon.png&quot; class=&quot;nav-img&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href&gt;CoolUnicorn.css&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;nav-item&quot;&gt;
+        &lt;button class=&quot;nav-button&quot;  onClick=&quot;location.replace('/docs/')&quot;&gt;get started&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;div class=&quot;container floating&quot;&gt;
+      &lt;h1 class=&quot;title&quot;&gt;CoolUnicorn.css&lt;/h1&gt;
+      &lt;p class=&quot;subtitle&quot;&gt;slow, un-responsive and&lt;br&gt; most importantly, looks good.&lt;/p&gt;
+      &lt;button class=&quot;big-button&quot; onClick=&quot;location.replace('/docs/')&quot;&gt;get started&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+          </div>
+        </div>
+      </div>
+      <h1 id="components">Components</h1>
+      <div class="section">
+        <h2 id="navbar">Navbar</h2>
+        <div class="section">
+          Navbars is considerably one of the most important elements of a website. CoolUnicorn.css makes it easy to make a navbar.
+          <pre>
+&lt;nav class=&quot;nav&quot;&gt;
+  &lt;div class=&quot;nav-item&quot;&gt;
+    &lt;a href=&quot;../&quot;&gt;
+    &lt;img src=&quot;https://coolunicorn.ml/icon.png&quot; class=&quot;nav-img&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href&gt;CoolUnicorn.css&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;nav-item&quot;&gt;
+    &lt;button class=&quot;nav-button&quot;  onClick=&quot;location.replace('/docs/')&quot;&gt;get started&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+          </pre><br>
+          <a href="#" class="a">See the result</a>
+        </div>
+        <h2 id="sidenav">Sidenav</h2>
+        <div class="section">
+          Sidenavs are basically navbars but on the side. They are usually for in-page navigation unlike wher navbars are for the entire website.
+          
+          <br>
+          <pre>
+&lt;div class=&quot;sidenav&quot;&gt;
+  &lt;div class=&quot;sidenav-item&quot;&gt;
+    &lt;a href&gt;Introduction&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;div class=&quot;sidenav-item&quot;&gt;
+      &lt;a href&gt; Quick Start &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sidenav-item&quot;&gt;
+      &lt;a href&gt; Starter Template &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;hr&gt;
+  &lt;div class=&quot;sidenav-item&quot;&gt;
+    &lt;a href&gt;Components&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;section&quot;&gt;
+    &lt;div class=&quot;sidenav-item&quot;&gt;
+    &lt;a href&gt;Navbar&lt;/a&gt;
+  &lt;/div&gt;
+      &lt;div class=&quot;sidenav-item&quot;&gt;
+    &lt;a href&gt;Sidenav&lt;/a&gt;
+  &lt;/div&gt;
+      &lt;div class=&quot;sidenav-item&quot;&gt;
+    &lt;a href&gt;Buttons&lt;/a&gt;
+  &lt;/div&gt;
+      &lt;div class=&quot;sidenav-item&quot;&gt;
+    &lt;a href&gt;Cards&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+           </pre> 
+        </div>
+        <h2 id="buttons">Buttons</h2>
+        <div class="section">
+          Buttons are probably the most used things in every website ever. CoolUnicorn.css comes with a few:
+          <pre>
+&lt;button class="big-button"&gt;Big button&lt;/button&gt;
+          </pre><br>
+          <button class="big-button">Big button</button>
+          <!--<blockquote>
+            There still is only one button in the docs but if you scan through the css you can find more.
+          </blockquote>-->
+        </div>
+        <h2 id="cards">Cards</h2>
+        <div class="section">
+          <p>Cards are for little snippets of information, such as features of your product.</p>
+<pre>
+&lt;div class=&quot;features-card&quot;&gt;
+  &lt;h2 class=&quot;features-heading&quot;&gt;Cards&lt;/h2&gt;
+  &lt;span&gt;
+    Cards are very nice for features.
+  &lt;/span&gt;
+&lt;/div&gt;
+</pre>
+          <div class="features-card">
+            <h2 class="features-heading">Cards</h2>
+            <span>
+              Cards are very nice for features.
+            </span>
+          </div>
+        </div>
+      </div>
+      <hr><br><a href="#" class="back-home">Back to top ⬆️</a><footer><center>© Copyright by CoolUnicorn. All rights reserved.</center></footer>
+    </div><br><br>
+    <script src="https://coolunicorn.ml/docs.js"></script>
+  </body>
+</html>
